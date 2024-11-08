@@ -1,7 +1,7 @@
 from easydict import EasyDict
 
 cfg = EasyDict()
-cfg.batch_size = 16
+cfg.batch_size = 4
 cfg.epoch = 200
 cfg.learning_rate = 1e-2
 cfg.momentum = 0.9
@@ -25,6 +25,6 @@ cfg.transunet.in_channels = 3
 cfg.transunet.out_channels = 128
 cfg.transunet.head_num = 2
 cfg.transunet.mlp_dim = 512
-cfg.transunet.block_num = 4
+cfg.transunet.block_num = 2
 cfg.transunet.patch_dim = 16
 cfg.transunet.class_num = 1

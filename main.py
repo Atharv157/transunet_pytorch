@@ -9,6 +9,7 @@ from inference import SegInference
 #temporary comment
 
 def main_pipeline(parser):
+    torch.cuda.empty_cache()
     device = 'cpu:0'
     if torch.cuda.is_available():
         device = 'cuda:0'
