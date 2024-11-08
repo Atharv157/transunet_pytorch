@@ -6,6 +6,7 @@ import argparse
 from train import TrainTestPipe
 from inference import SegInference
 
+#temporary comment
 
 def main_pipeline(parser):
     device = 'cpu:0'
